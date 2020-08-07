@@ -9,7 +9,7 @@ class Navbar extends Component {
 <div>
     <nav className="navbar navbar-fixed-top navbar-expand-sm navbar-dark bg-info mb-4">
         <div className="container">
-                 <Link className="navbar-brand" to="/">  
+                 <Link className="navbar-brand" to="/">
                        {/*<img animate={{ scale: 0.5, opacity: 0.7 }}
                         transition={{
                         duration:2,
@@ -37,28 +37,28 @@ class Navbar extends Component {
                      <Link className="nav-link" to="/profiles">KIDS
                      </Link>
                      </li>
-                     
+
                      <li className="nav-item ">
-                     
+
                      </li>
                      </ul>*/}
                      <ul className="navbar-nav ml-auto">
-                    <motion.li  
+                    <motion.li
                     initial={{opacity:0,x:+100}}
                     animate={{ opacity:1,x:0 }}
-                    transition={{ 
+                    transition={{
                     duration: 2,delay:1}}
                      className="nav-item">
-                     
+
                           <Link className="nav-link" to="/register">
                           <i class="fa fa-user" aria-hidden="true"></i>
                           {' '}Profile</Link>
                     </motion.li>
                     <motion.li initial={{opacity:0,x:+100}}
                     animate={{ opacity:1,x:0 }}
-                    transition={{ 
+                    transition={{
                     duration: 2,delay:1}}
-                     
+
                       className="nav-item">
                           <Link className="nav-link" to="/login">
                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -74,7 +74,6 @@ class Navbar extends Component {
                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav" >
                 <span className="navbar-toggler-icon"></span>
                 </button>
-
                 <div className="collapse navbar-collapse" id="mobile-nav">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item nav-item1">
@@ -94,7 +93,7 @@ class Navbar extends Component {
                      </Link>
                      </li>
                      <li className="nav-item nav-item1 ">
-                     <Link className="nav-link" to="/profiles">SPORTS AND BOOKS 
+                     <Link className="nav-link" to="/profiles">SPORTS AND BOOKS
                      </Link>
                      </li>
                      <li className="nav-item nav-item1 ">
@@ -105,9 +104,8 @@ class Navbar extends Component {
                      <Link className="nav-link" to="/profiles">DEALS
                      </Link>
                      </li>
-                     </ul>
-                     
-                    </div>
+               </ul>
+               </div>
         </div>
     </nav>
 
